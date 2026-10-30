@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>youtube-claude</title>
+<meta name="description" content="Herramienta personal para gestionar un canal educativo de YouTube mediante la YouTube Data API.">
+<style>
+  :root { --bg:#ffffff; --fg:#1d2430; --muted:#5b6575; --line:#e3e7ee; --accent:#1f4e79; --card:#f6f8fb; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#12161d; --fg:#e7ebf2; --muted:#9aa5b5; --line:#2a313c; --accent:#7fb0e0; --card:#1a2029; } }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width:760px; margin:0 auto; padding:48px 16px 64px; }
+  h1 { font-size:1.9rem; margin:0 0 .3rem; }
+  h2 { font-size:1.2rem; margin:2rem 0 .5rem; color:var(--accent); }
+  p.lead { color:var(--muted); margin:0 0 1.5rem; }
+  ul { padding-left:1.2rem; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:16px 20px; }
+  code { font-family: ui-monospace, Consolas, monospace; font-size:.92em; }
+  a { color:var(--accent); }
+  footer { margin-top:3rem; padding-top:1rem; border-top:1px solid var(--line); color:var(--muted); font-size:.92rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>youtube-claude</h1>
+  <p class="lead">Herramienta personal para gestionar mi canal educativo de YouTube mediante la YouTube Data API v3.</p>
+
+  <div class="card">
+    <p>Esta aplicación es de <strong>uso personal</strong>. La utiliza únicamente el titular del canal para administrar
+    sus propios videos de docencia e investigación (metodología de la investigación, economía y finanzas). No está
+    abierta a otros usuarios ni ofrece servicios a terceros.</p>
+  </div>
+
+  <h2>Qué hace</h2>
+  <ul>
+    <li>Lista los videos publicados en el canal y su información básica (título, fecha y enlace).</li>
+    <li>Sube videos nuevos al canal, con su título, descripción y estado de privacidad.</li>
+  </ul>
+
+  <h2>Permisos que solicita</h2>
+  <ul>
+    <li><code>youtube.readonly</code>: consultar la información del propio canal y de sus videos.</li>
+    <li><code>youtube.upload</code>: subir videos al propio canal.</li>
+  </ul>
+  <p>La autorización se hace con OAuth 2.0 de Google en el equipo del titular. El token de acceso se guarda solo en
+  ese equipo y puede revocarse en cualquier momento desde
+  <a href="https://myaccount.google.com/permissions">la configuración de la cuenta de Google</a>.</p>
+
+  <h2>Privacidad</h2>
+  <p>Los datos se usan exclusivamente para gestionar el propio canal, no se almacenan en servidores externos y no se
+  comparten con terceros. Consulte la <a href="privacy.html">política de privacidad</a>.</p>
+
+  <footer>
+    Contacto: <a href="mailto:gifatdea@gmail.com">gifatdea@gmail.com</a> · <a href="privacy.html">Política de privacidad</a>
+  </footer>
+</main>
+</body>
+</html>
